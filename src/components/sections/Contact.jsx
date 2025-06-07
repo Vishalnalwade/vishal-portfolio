@@ -9,11 +9,13 @@ export const Contact =()=>{
         message:''
     });
 
-   
+    const SERVICE_ID="service_ywphhdu";
+    const TEMPLATE_ID="template_phiq3vr";
+    const PUBLIC_KEY="K_JBsKuMe3CwV33P8";
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        emails.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
+        emails.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
         .then((result)=>{
             alert("Message sent successfully!");
             setFormData({
