@@ -9,13 +9,10 @@ export const Contact =()=>{
         message:''
     });
 
-    const SERVICE_ID="service_ywphhdu";
-    const TEMPLATE_ID="template_phiq3vr";
-    const PUBLIC_KEY="K_JBsKuMe3CwV33P8";
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        emails.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+        emails.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
         .then((result)=>{
             alert("Message sent successfully!");
             setFormData({
@@ -41,7 +38,7 @@ export const Contact =()=>{
                             <input type="email" id='email' name='email' required value={formData.email} onChange={(e)=>setFormData({...formData,email:e.target.value})} className='w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5' placeholder='Email...'/>
                         </div>
                         <div className="relative">
-                            <textarea  id='textarea' name='textarea' rows={5} required value={formData.message} onChange={(e)=>setFormData({...formData,message:e.target.value})} className='w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5' placeholder='Your Meassage...'/>
+                            <textarea  id='textarea' name='message' rows={5} required value={formData.message} onChange={(e)=>setFormData({...formData,message:e.target.value})} className='w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5' placeholder='Your Meassage...'/>
                         </div>
                         <button type='submit' className='w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] cursor-pointer'>Send Message</button>
                     </form>
