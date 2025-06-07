@@ -11,7 +11,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           <a href="#home" className="font-mono text-xl font-bold text-white">
             {" "}
             {""}
-             Portfolio<span className="text-blue-500 "></span>{" "}
+             <span className="text-blue-500 ">PORTFOLIO</span>{" "}
           </a>
           <div
             className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
