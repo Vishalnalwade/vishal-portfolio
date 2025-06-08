@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import '../index.css';
 export const RevealOnScroll = ({ children }) => {
     const ref=useRef(null);
 
