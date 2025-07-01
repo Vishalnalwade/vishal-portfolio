@@ -64,7 +64,7 @@ export const About =()=>{
                     <p>Developed Web Application using React and Spring Boot</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Intern at Dhankranti (2025)</h4>
+                    <h4 className="font-semibold">Intern at Apeiro Solutions (2025)</h4>
                     <p>Assisted in building front-end components and integrating REST APIs</p>
                   </div>
                 </div>
