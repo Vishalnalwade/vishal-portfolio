@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tsilwindcss()
   ],
-  base: '/portfolio/'
+  base: '/vishal-portfolio/'
 })
