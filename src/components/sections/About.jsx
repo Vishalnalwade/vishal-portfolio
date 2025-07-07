@@ -65,7 +65,7 @@ export const About =()=>{
                   </div>
                   <div>
                     <h4 className="font-semibold">Intern at ProAzaure Software Solutions Pvt.Ltd (2025)</h4>
-                    <p>Assisted in building front-end components and back-end REST APIs</p>
+                    <p>Assisted in building front-end components and back-end REST APIs </p>
                   </div>
                 </div>
           </div>
